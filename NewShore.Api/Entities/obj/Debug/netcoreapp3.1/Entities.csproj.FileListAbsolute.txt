@@ -1,0 +1,10 @@
+C:\JHON\Github\NewShore-Back\NewShore.Api\Entities\bin\Debug\netcoreapp3.1\Entities.deps.json
+C:\JHON\Github\NewShore-Back\NewShore.Api\Entities\bin\Debug\netcoreapp3.1\Entities.dll
+C:\JHON\Github\NewShore-Back\NewShore.Api\Entities\bin\Debug\netcoreapp3.1\Entities.pdb
+C:\JHON\Github\NewShore-Back\NewShore.Api\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.AssemblyReference.cache
+C:\JHON\Github\NewShore-Back\NewShore.Api\Entities\obj\Debug\netcoreapp3.1\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\JHON\Github\NewShore-Back\NewShore.Api\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfoInputs.cache
+C:\JHON\Github\NewShore-Back\NewShore.Api\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfo.cs
+C:\JHON\Github\NewShore-Back\NewShore.Api\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.CoreCompileInputs.cache
+C:\JHON\Github\NewShore-Back\NewShore.Api\Entities\obj\Debug\netcoreapp3.1\Entities.dll
+C:\JHON\Github\NewShore-Back\NewShore.Api\Entities\obj\Debug\netcoreapp3.1\Entities.pdb

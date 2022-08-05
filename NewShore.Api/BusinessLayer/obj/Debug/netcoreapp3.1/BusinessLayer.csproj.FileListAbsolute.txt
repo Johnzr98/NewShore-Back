@@ -1,0 +1,15 @@
+C:\JHON\Github\NewShore-Back\NewShore.Api\BusinessLayer\bin\Debug\netcoreapp3.1\BusinessLayer.deps.json
+C:\JHON\Github\NewShore-Back\NewShore.Api\BusinessLayer\bin\Debug\netcoreapp3.1\BusinessLayer.dll
+C:\JHON\Github\NewShore-Back\NewShore.Api\BusinessLayer\bin\Debug\netcoreapp3.1\BusinessLayer.pdb
+C:\JHON\Github\NewShore-Back\NewShore.Api\BusinessLayer\bin\Debug\netcoreapp3.1\DataLayer.dll
+C:\JHON\Github\NewShore-Back\NewShore.Api\BusinessLayer\bin\Debug\netcoreapp3.1\Entities.dll
+C:\JHON\Github\NewShore-Back\NewShore.Api\BusinessLayer\bin\Debug\netcoreapp3.1\DataLayer.pdb
+C:\JHON\Github\NewShore-Back\NewShore.Api\BusinessLayer\bin\Debug\netcoreapp3.1\Entities.pdb
+C:\JHON\Github\NewShore-Back\NewShore.Api\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.csproj.AssemblyReference.cache
+C:\JHON\Github\NewShore-Back\NewShore.Api\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\JHON\Github\NewShore-Back\NewShore.Api\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.AssemblyInfoInputs.cache
+C:\JHON\Github\NewShore-Back\NewShore.Api\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.AssemblyInfo.cs
+C:\JHON\Github\NewShore-Back\NewShore.Api\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\JHON\Github\NewShore-Back\NewShore.Api\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.csproj.CopyComplete
+C:\JHON\Github\NewShore-Back\NewShore.Api\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.dll
+C:\JHON\Github\NewShore-Back\NewShore.Api\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.pdb
