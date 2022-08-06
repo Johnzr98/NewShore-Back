@@ -21,7 +21,7 @@ namespace DataLayer
 
         public IList<T> GetFlights<T>(int category)
         {
-            List<T> flights = new List<T>();
+            List <T> flights = new List<T>();
 
             var client = new RestClient($"{flightsUrl}/flights/{category}");
             var request = new RestRequest(Method.GET);

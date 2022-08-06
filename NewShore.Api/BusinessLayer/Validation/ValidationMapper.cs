@@ -11,12 +11,12 @@ namespace BusinessLayer.Validation
     {
         public static Route DataMapper(Route route)
         {
-            if (string.IsNullOrEmpty(route.departureStation))
+            if (string.IsNullOrEmpty(route.departureStation) || route.departureStation.Length > 3)
             {
                 return null;
             }
 
-            if (string.IsNullOrEmpty(route.arrivalStation))
+            if (string.IsNullOrEmpty(route.arrivalStation) || route.arrivalStation.Length > 3)
             {
                 return null;
             }

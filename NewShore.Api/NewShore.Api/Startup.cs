@@ -23,7 +23,6 @@ namespace NewShore.Api
         public IConfiguration Configuration { get; }
         public IBaseRepository BaseRepository { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers(opciones =>
@@ -45,9 +44,22 @@ namespace NewShore.Api
                     Description = "api for consult flights",
                 });
             });
+
+            string[] allowedOrigins = Configuration["AppConfig:ALLOWEDORIGINS"].Split('|');
+
+            services.AddCors(opciones =>
+            {
+                opciones.AddDefaultPolicy(builder =>
+                {
+                    builder
+                   .AllowAnyMethod()
+                   .AllowAnyHeader()
+                   .AllowCredentials()
+                   .WithOrigins(allowedOrigins);
+                });
+            });
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
@@ -58,6 +70,8 @@ namespace NewShore.Api
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors();
 
             app.UseAuthorization();
 

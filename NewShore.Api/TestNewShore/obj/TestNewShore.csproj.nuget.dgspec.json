@@ -1,0 +1,346 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\JHON\\Github\\NewShore-Back\\NewShore.Api\\TestNewShore\\TestNewShore.csproj": {}
+  },
+  "projects": {
+    "C:\\JHON\\Github\\NewShore-Back\\NewShore.Api\\BusinessLayer\\BusinessLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\JHON\\Github\\NewShore-Back\\NewShore.Api\\BusinessLayer\\BusinessLayer.csproj",
+        "projectName": "BusinessLayer",
+        "projectPath": "C:\\JHON\\Github\\NewShore-Back\\NewShore.Api\\BusinessLayer\\BusinessLayer.csproj",
+        "packagesPath": "C:\\Users\\jhon.zapata\\.nuget\\packages\\",
+        "outputPath": "C:\\JHON\\Github\\NewShore-Back\\NewShore.Api\\BusinessLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jhon.zapata\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://grupoepm.pkgs.visualstudio.com/_packaging/org-epm-artefactos%40Local/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\JHON\\Github\\NewShore-Back\\NewShore.Api\\DataLayer\\DataLayer.csproj": {
+                "projectPath": "C:\\JHON\\Github\\NewShore-Back\\NewShore.Api\\DataLayer\\DataLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\JHON\\Github\\NewShore-Back\\NewShore.Api\\DataLayer\\DataLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\JHON\\Github\\NewShore-Back\\NewShore.Api\\DataLayer\\DataLayer.csproj",
+        "projectName": "DataLayer",
+        "projectPath": "C:\\JHON\\Github\\NewShore-Back\\NewShore.Api\\DataLayer\\DataLayer.csproj",
+        "packagesPath": "C:\\Users\\jhon.zapata\\.nuget\\packages\\",
+        "outputPath": "C:\\JHON\\Github\\NewShore-Back\\NewShore.Api\\DataLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jhon.zapata\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://grupoepm.pkgs.visualstudio.com/_packaging/org-epm-artefactos%40Local/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\JHON\\Github\\NewShore-Back\\NewShore.Api\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\JHON\\Github\\NewShore-Back\\NewShore.Api\\Entities\\Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[104.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\JHON\\Github\\NewShore-Back\\NewShore.Api\\Entities\\Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\JHON\\Github\\NewShore-Back\\NewShore.Api\\Entities\\Entities.csproj",
+        "projectName": "Entities",
+        "projectPath": "C:\\JHON\\Github\\NewShore-Back\\NewShore.Api\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\jhon.zapata\\.nuget\\packages\\",
+        "outputPath": "C:\\JHON\\Github\\NewShore-Back\\NewShore.Api\\Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jhon.zapata\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://grupoepm.pkgs.visualstudio.com/_packaging/org-epm-artefactos%40Local/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\JHON\\Github\\NewShore-Back\\NewShore.Api\\NewShore.Api\\NewShore.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\JHON\\Github\\NewShore-Back\\NewShore.Api\\NewShore.Api\\NewShore.Api.csproj",
+        "projectName": "NewShore.Api",
+        "projectPath": "C:\\JHON\\Github\\NewShore-Back\\NewShore.Api\\NewShore.Api\\NewShore.Api.csproj",
+        "packagesPath": "C:\\Users\\jhon.zapata\\.nuget\\packages\\",
+        "outputPath": "C:\\JHON\\Github\\NewShore-Back\\NewShore.Api\\NewShore.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jhon.zapata\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://grupoepm.pkgs.visualstudio.com/_packaging/org-epm-artefactos%40Local/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\JHON\\Github\\NewShore-Back\\NewShore.Api\\BusinessLayer\\BusinessLayer.csproj": {
+                "projectPath": "C:\\JHON\\Github\\NewShore-Back\\NewShore.Api\\BusinessLayer\\BusinessLayer.csproj"
+              },
+              "C:\\JHON\\Github\\NewShore-Back\\NewShore.Api\\DataLayer\\DataLayer.csproj": {
+                "projectPath": "C:\\JHON\\Github\\NewShore-Back\\NewShore.Api\\DataLayer\\DataLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\JHON\\Github\\NewShore-Back\\NewShore.Api\\TestNewShore\\TestNewShore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\JHON\\Github\\NewShore-Back\\NewShore.Api\\TestNewShore\\TestNewShore.csproj",
+        "projectName": "TestNewShore",
+        "projectPath": "C:\\JHON\\Github\\NewShore-Back\\NewShore.Api\\TestNewShore\\TestNewShore.csproj",
+        "packagesPath": "C:\\Users\\jhon.zapata\\.nuget\\packages\\",
+        "outputPath": "C:\\JHON\\Github\\NewShore-Back\\NewShore.Api\\TestNewShore\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jhon.zapata\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://grupoepm.pkgs.visualstudio.com/_packaging/org-epm-artefactos%40Local/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\JHON\\Github\\NewShore-Back\\NewShore.Api\\BusinessLayer\\BusinessLayer.csproj": {
+                "projectPath": "C:\\JHON\\Github\\NewShore-Back\\NewShore.Api\\BusinessLayer\\BusinessLayer.csproj"
+              },
+              "C:\\JHON\\Github\\NewShore-Back\\NewShore.Api\\NewShore.Api\\NewShore.Api.csproj": {
+                "projectPath": "C:\\JHON\\Github\\NewShore-Back\\NewShore.Api\\NewShore.Api\\NewShore.Api.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[2.2.7, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.2.7, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.11.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.18.2, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
