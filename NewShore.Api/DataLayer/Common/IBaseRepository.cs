@@ -5,6 +5,6 @@ namespace DataLayer.Common
 {
     public interface IBaseRepository
     {
-        IList<Flight> GetFlights(int category);
+        IList<T> GetFlights<T>(int category);
     }
 }

@@ -19,10 +19,30 @@ namespace NewShore.Api.Controllers
             this.baseFlights = baseFlights;
         }
 
-        [HttpGet("GetFlights/{category}")]
-        public IList<Flight> Get(int category)
+        [HttpPost("GetAllFlights/{category}")]
+        public ActionResult GetAllFlights(int category, Route data)
         {
-            return this.baseFlights.GetFlightsByCategory(category);
+            IList<Flight> flights = this.baseFlights.GetFlightsByParams(category, data);
+
+            if (flights.Count > 0)
+            {
+                return Ok(flights);
+            }
+
+            return NotFound();
+        }
+
+        [HttpGet("GetFlightsRoutes/{category}")]
+        public ActionResult GetFlightsRoutes(int category)
+        {
+            IList<Route> flights = this.baseFlights.GetFlightsByCategory(category);
+
+            if (flights.Count > 0)
+            {
+                return Ok(flights);
+            }
+
+            return NotFound();
         }
     }
 }

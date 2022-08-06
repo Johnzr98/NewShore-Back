@@ -5,6 +5,7 @@ namespace BusinessLayer.Common
 {
     public interface IBaseFlights
     {
-        IList<Flight> GetFlightsByCategory(int category);
+        IList<Route> GetFlightsByCategory(int category);
+        IList<Flight> GetFlightsByParams(int category, Route data);
     }
 }

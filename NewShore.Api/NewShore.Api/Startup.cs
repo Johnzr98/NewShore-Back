@@ -8,6 +8,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using System.Text;
+using NewShore.Api.Filters;
 
 namespace NewShore.Api
 {
@@ -24,9 +26,13 @@ namespace NewShore.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddControllers(opciones =>
+            {
+                opciones.Filters.Add(typeof(FiltroDeExepcion));
+            }).AddJsonOptions(x =>
+            x.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles);
 
-            services.AddSingleton(new BaseRepository("https://recruiting-api.newshore.es/api"));
+            services.AddSingleton(new BaseRepository(Configuration["Api"]));
             services.AddSingleton(new BaseFlights());
             services.AddTransient<IBaseFlights, BaseFlights>();
             services.AddSwaggerGen();

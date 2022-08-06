@@ -2,6 +2,7 @@
 using Entities;
 using Newtonsoft.Json;
 using RestSharp;
+using System;
 using System.Collections.Generic;
 
 namespace DataLayer
@@ -18,9 +19,9 @@ namespace DataLayer
         {
         }
 
-        public IList<Flight> GetFlights(int category)
+        public IList<T> GetFlights<T>(int category)
         {
-            List<Flight> flights = new List<Flight>();
+            List<T> flights = new List<T>();
 
             var client = new RestClient($"{flightsUrl}/flights/{category}");
             var request = new RestRequest(Method.GET);
@@ -28,7 +29,7 @@ namespace DataLayer
 
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                flights = JsonConvert.DeserializeObject<List<Flight>>(response.Content);
+                flights = JsonConvert.DeserializeObject<List<T>>(response.Content);
             }
 
             return flights;
