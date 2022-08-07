@@ -4,8 +4,11 @@
 ## How to run Back End?
 
 1-You need to have .Net Core 6
+
 2-Select as defaul project the API to Run
+
 3-You need to put in the path `Api` => `appsettings.json` => `ALLOWEDORIGINS` the URL of Front End (localhost)
+
 4-You need to verify that the url `https://recruiting-api.newshore.es/api/flights/0` is run
 
 
@@ -23,6 +26,7 @@
 ## Test
 
 In the front: only in the HomeComponent
+
 In the back:  only in the FlightsController
 
 ## Note
