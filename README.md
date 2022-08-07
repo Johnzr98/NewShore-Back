@@ -11,9 +11,12 @@
 
 ## How to run Front End?
 
-1-In the `package.json` you can look the version of ng
+1-In the `package.json` you can look the version of ngz
+
 2- `npm install` to rebuild node_modules
+
 3- You need to put in file enviorements the URL of API
+
 4-You need to verify that the url `https://recruiting-api.newshore.es/api/flights/0` is run
 
 
