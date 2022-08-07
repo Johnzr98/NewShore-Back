@@ -1,29 +1,35 @@
-﻿
-
-namespace BusinessLayer
+﻿namespace BusinessLayer
 {
     using BusinessLayer.Common;
     using BusinessLayer.Validation;
     using DataLayer;
-    using DataLayer.Common;
     using Entities;
     using System.Collections.Generic;
-    using System.Linq;
 
-    public class BaseFlights : BaseRepository, IBaseFlights 
+    public class BaseFlights : BaseRepository, IBaseFlights
     {
         public IList<Route> GetFlightsByCategory(int category)
         {
             return GetFlights<Route>(category);
-        } 
-        
-        public IList<Flight> GetFlightsByParams(int category, Route flight)
+        }
+
+        public Journey GetFlightsByParams(int category, Route route)
         {
-            Route dataMapper = ValidationMapper.DataMapper(flight);
+            Route routeMapper = ValidationMapper.DataMapper(route);
 
-            if (dataMapper == null) return new List<Flight>();
+            if (routeMapper == null) return null;
 
-            return GetFlights<Flight>(category).Where(f => f.arrivalStation == dataMapper.arrivalStation && f.departureStation == dataMapper.departureStation).ToList();
+            IList<Flight> flightsResponse = GetFlights<Flight>(category);
+
+            var nonStopFlight = TypeOfFlight.NonStopFlight(flightsResponse, routeMapper);
+
+            if (nonStopFlight.Count >= 1) return ValidationMapper.JourneyMapper(route, nonStopFlight);
+
+            var twoFlights = TypeOfFlight.TwoFlights(flightsResponse, routeMapper);
+
+            if (twoFlights.Count >= 1) return ValidationMapper.JourneyMapper(route, twoFlights);
+
+            return null;
         }
     }
 }

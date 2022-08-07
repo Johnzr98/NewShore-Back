@@ -42,39 +42,6 @@ namespace TestNewShore.Api.Controllers
         }
 
         [TestMethod]
-        public void MethodReturnOkToConsultFlights()
-        {
-            var route = new Route
-            {
-                arrivalStation = "MDE",
-                departureStation = "BOG"
-            };
-
-            List<Flight> flights = new List<Flight>
-            {
-                new Flight
-                {
-                    arrivalStation = "MDE",
-                    departureStation = "BOG"
-                },
-                new Flight
-                {
-                    arrivalStation = "MDE",
-                    departureStation = "BOG"
-                }
-            };
-
-            this.mockServicesBaseFlights.Setup(x => x.GetFlightsByParams(0, route)).Returns(flights);
-
-            var controller = new FlightsController(this.mockServicesBaseFlights.Object, this.mockIlogger);
-            var response = controller.GetAllFlights(0, route) as ObjectResult;
-
-            var data = response?.Value as List<Flight>;
-
-            Assert.AreEqual(2, data?.Count);
-        }
-
-        [TestMethod]
         public void MethodReturnNullToConsultFlightsRoutes()
         {
             List<Route> routes = new List<Route>();

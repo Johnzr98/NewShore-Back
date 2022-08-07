@@ -22,11 +22,11 @@ namespace NewShore.Api.Controllers
         [HttpPost("GetAllFlights/{category}")]
         public ActionResult GetAllFlights(int category, Route data)
         {
-            IList<Flight> flights = this.baseFlights.GetFlightsByParams(category, data);
+            Journey journey = this.baseFlights.GetFlightsByParams(category, data);
 
-            if (flights.Count > 0)
+            if (journey != null)
             {
-                return Ok(flights);
+                return Ok(journey);
             }
 
             return NotFound();

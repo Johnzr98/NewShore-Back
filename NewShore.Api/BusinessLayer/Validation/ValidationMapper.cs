@@ -26,5 +26,38 @@ namespace BusinessLayer.Validation
 
             return route;
         }
+
+        public static Journey JourneyMapper(Route route, IList<Flight> flights)
+        {
+            Journey journey = new Journey();
+            journey.flights = new List<JourneyFlight>();
+            decimal price = 0;
+
+            journey.origin = route.departureStation;
+            journey.destination = route.arrivalStation;
+
+            foreach (var flight in flights)
+            {
+                price += flight.price;
+
+                var journeyFlight = new JourneyFlight
+                {
+                    origin = flight.departureStation,
+                    destination = flight.arrivalStation,
+                    price = flight.price,
+                    transport = new JourneyTransport
+                    {
+                        flightCarrier = flight.flightCarrier,
+                        flightNumber = flight.flightNumber,
+                    }
+                };
+
+                journey.flights.Add(journeyFlight);
+            }
+
+            journey.price = price;
+
+            return journey;
+        }
     }
 }
